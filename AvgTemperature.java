@@ -12,7 +12,7 @@ public class AvgTemperature {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // 1: Take input for the number of temperatures
+        // 1: Input 5 for 5 different temperature readings
         System.out.print("Enter the number of temperature readings: ");
         int numTemps = input.nextInt();
 
@@ -21,7 +21,7 @@ public class AvgTemperature {
             return;
         }
 
-        // 2: Prompt the user to enter all the temperature values
+        // 2: Enter 5 different temperatures when prompted (throw in 1 or 2 with decimals)
         double[] temperatures = new double[numTemps];
         double sum = 0;
 
@@ -31,11 +31,11 @@ public class AvgTemperature {
             sum += temperatures[i];
         }
 
-        // 3: Calculate the average temperature
+        // 3: Calculates the average temperature
         double average = sum / numTemps;
         System.out.printf("The average temperature is: %.2f\n", average); // format to 2 decimal places
 
-        // 4: Count how many temperatures are above the average
+        // 4: Counts how many temperatures are above the average
         int aboveAverageCount = 0;
         for (double temp : temperatures) {
             if (temp > average) {
