@@ -1,4 +1,4 @@
-package src;
+package src.AvgTemperature;
 /**
 Calculate the avarage temperature, and give how many days are above the avarage temperature
   1. Take an input from the user (eg. 5)
