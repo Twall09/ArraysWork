@@ -90,7 +90,7 @@ public class LinkedListDelete {
     //0. if the link doesn't
     //1. delete at the beginning
     //2. delete at the ending
-    //3. delete anywhere
+    //3. delete anywher
 
     public void deleteNode(int location) {
         if (head == null) {
