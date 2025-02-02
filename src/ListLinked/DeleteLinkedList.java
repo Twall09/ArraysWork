@@ -1,9 +1,6 @@
 package src.ListLinked;
 
-class Node {
-    int value;
-    Node next;
-}
+import src.ListLinked.Node;
 
 // PROF'S CODE:
 
@@ -13,14 +10,13 @@ public class DeleteLinkedList {
     public int size;
 
     // Create a linked list
-    public Node createdLinkedList(int nodeValue) {
+    public void createdLinkedList(int nodeValue) {
         Node node = new Node();
         node.next = null;
         node.value = nodeValue;
         head = node;
         tail = node;
         size = 1;
-        return head;
     }
 
     // Insert into linked list
@@ -114,28 +110,6 @@ public class DeleteLinkedList {
             tempNode.next = tempNode.next.next;
             size--;
         }
-    }
-
-
-    // TEST OUT THE DELETE MTHODS:
-
-    public static void main(String[] args) {
-        DeleteLinkedList list = new DeleteLinkedList();
-
-        // Delete first node
-        System.out.println("first node");
-        list.deleteNode(0);
-        list.traverseLinkedList(); // Output: 10 -> 20 -> 30 -> 40
-
-        // Delete last node
-        System.out.println("last node");
-        list.deleteNode(list.size - 1);
-        list.traverseLinkedList(); // Output: 10 -> 20 -> 30
-
-        // Delete node at index 1
-        System.out.println("anywhere(ex: index 1)");
-        list.deleteNode(1);
-        list.traverseLinkedList(); // Output: 10 -> 30
     }
 }
 
