@@ -18,6 +18,7 @@ public abstract class Animal {
     }
 }
 
+ // added the dog and cat classes here
 class Dog extends Animal {
     public Dog(String name, int arrivalTime) {
         super(name, arrivalTime);
